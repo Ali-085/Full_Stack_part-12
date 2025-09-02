@@ -1,0 +1,60 @@
+services:
+  frontend-builder:
+    build:
+      context: ./blog-frontend
+      dockerfile: Dockerfile
+    container_name: frontend-builder
+    networks:
+      - blog-network
+    command: sh -c "cp -r /app/dist/* /dist"
+    volumes:
+      - frontend-build:/dist   # only one volumes block
+
+  backend:
+    build:
+      context: ./blog-backend
+      dockerfile: Dockerfile
+    container_name: blog-backend
+    environment:
+      - PORT=3001
+      - MONGODB_URI=mongodb://the_username:the_password@mongo:27017/the_database?authSource=the_database
+      - SECRET=your_production_secret
+    depends_on:
+      - mongo
+    networks:
+      - blog-network
+
+  mongo:
+    image: mongo:latest
+    container_name: blog-mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+      MONGO_INITDB_DATABASE: the_database
+    volumes:
+      - mongo-data:/data/db
+      - ./blog-backend/models/mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
+    networks:
+      - blog-network
+
+  nginx:
+    image: nginx:alpine
+    container_name: blog-nginx
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - frontend-build:/usr/share/nginx/html:ro   # static files here
+    depends_on:
+      - backend
+      - frontend-builder
+    networks:
+      - blog-network
+
+networks:
+  blog-network:
+    driver: bridge
+
+volumes:
+  mongo-data:
+  frontend-build:

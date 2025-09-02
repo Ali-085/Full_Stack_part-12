@@ -1,0 +1,943 @@
+7[0;30r8[1A[J[?2004h]0;root@b2e5915f85d5: /usr/src/app root@b2e5915f85d5:/usr/src/app# apt install -y curlnodejscurl -sL https://deb.nodesource.com/setup_20.x | bash
+[?2004l
+[38;5;79m2025-08-26 15:38:59 - Installing pre-requisites[0m
+
+0% [Working]
+0% [Waiting for headers] [Waiting for headers]
+                                              
+Hit:1 http://security.ubuntu.com/ubuntu noble-security InRelease
+
+                                              
+0% [Waiting for headers]
+                        
+Hit:2 http://archive.ubuntu.com/ubuntu noble InRelease
+
+0% [Waiting for headers]
+0% [Waiting for headers]
+                        
+Hit:3 http://archive.ubuntu.com/ubuntu noble-updates InRelease
+
+                        
+0% [Working]
+0% [Waiting for headers]
+0% [Waiting for headers]
+                        
+Hit:4 http://archive.ubuntu.com/ubuntu noble-backports InRelease
+
+                        
+0% [Working]
+20% [Working]
+             
+
+Reading package lists... 0%
+Reading package lists... Done
+
+Building dependency tree... 0%
+
+Building dependency tree... 0%
+
+Building dependency tree... 50%
+
+Building dependency tree... 50%
+
+Building dependency tree... 65%
+
+Building dependency tree... Done
+
+Reading state information... 0% 
+
+Reading state information... 4%
+
+Reading state information... Done
+ca-certificates is already the newest version (20240203).
+ca-certificates set to manually installed.
+curl is already the newest version (8.5.0-2ubuntu10.6).
+The following additional packages will be installed:
+  adduser dirmngr gnupg-l10n gnupg-utils gpg gpg-agent gpg-wks-client gpgconf gpgsm keyboxd libksba8 libreadline8t64
+  libsqlite3-0 pinentry-curses readline-common
+Suggested packages:
+  liblocale-gettext-perl perl cron quota ecryptfs-utils dbus-user-session libpam-systemd pinentry-gnome3 tor
+  parcimonie xloadimage gpg-wks-server scdaemon pinentry-doc readline-doc
+The following NEW packages will be installed:
+  adduser apt-transport-https dirmngr gnupg gnupg-l10n gnupg-utils gpg gpg-agent gpg-wks-client gpgconf gpgsm keyboxd
+  libksba8 libreadline8t64 libsqlite3-0 pinentry-curses readline-common
+0 upgraded, 17 newly installed, 0 to remove and 1 not upgraded.
+Need to get 3307 kB of archives.
+After this operation, 8328 kB of additional disk space will be used.
+
+0% [Working]
+0% [Waiting for headers]
+                        
+Get:1 http://archive.ubuntu.com/ubuntu noble/main amd64 adduser all 3.137ubuntu1 [101 kB]
+
+0% [1 adduser 11.0 kB/101 kB 11%]
+1% [1 adduser 39.2 kB/101 kB 39%]
+                                 
+4% [Working]
+4% [Waiting for headers]
+4% [Waiting for headers]
+                        
+Get:2 http://archive.ubuntu.com/ubuntu noble/main amd64 readline-common all 8.2-4build1 [56.5 kB]
+
+4% [2 readline-common 14.2 kB/56.5 kB 25%]
+                                          
+6% [Waiting for headers]
+                        
+Get:3 http://archive.ubuntu.com/ubuntu noble/main amd64 libreadline8t64 amd64 8.2-4build1 [153 kB]
+
+7% [3 libreadline8t64 28.7 kB/153 kB 19%]
+                                         
+Get:4 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libsqlite3-0 amd64 3.45.1-1ubuntu2.4 [701 kB]
+
+                                         
+11% [4 libsqlite3-0 1612 B/701 kB 0%]
+15% [4 libsqlite3-0 170 kB/701 kB 24%]
+20% [4 libsqlite3-0 362 kB/701 kB 52%]
+22% [4 libsqlite3-0 449 kB/701 kB 64%]
+26% [4 libsqlite3-0 636 kB/701 kB 91%]
+                                      
+29% [Waiting for headers]
+                         
+Get:5 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 apt-transport-https all 2.8.3 [3970 B]
+
+30% [Waiting for headers]
+                         
+Get:6 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 gpgconf amd64 2.4.4-2ubuntu17.3 [104 kB]
+
+30% [6 gpgconf 1426 B/104 kB 1%]
+                                
+34% [Waiting for headers]
+                         
+Get:7 http://archive.ubuntu.com/ubuntu noble/main amd64 libksba8 amd64 1.6.6-1build1 [122 kB]
+
+35% [7 libksba8 28.7 kB/122 kB 24%]
+36% [7 libksba8 72.4 kB/122 kB 59%]
+36% [7 libksba8 72.4 kB/122 kB 59%]                                                                        187 kB/s 11s
+38% [Waiting for headers]                                                                                  187 kB/s 11s
+                                                                                                                       
+Get:8 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 dirmngr amd64 2.4.4-2ubuntu17.3 [323 kB]
+
+38% [8 dirmngr 338 B/323 kB 0%]                                                                            187 kB/s 11s
+45% [8 dirmngr 293 kB/323 kB 91%]                                                                           187 kB/s 9s
+47% [Waiting for headers]                                                                                   187 kB/s 9s
+                                                                                                                       
+Get:9 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 gnupg-utils amd64 2.4.4-2ubuntu17.3 [109 kB]
+
+47% [9 gnupg-utils 4722 B/109 kB 4%]                                                                        187 kB/s 9s
+51% [Waiting for headers]                                                                                   187 kB/s 8s
+                                                                                                                       
+Get:10 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 gpg amd64 2.4.4-2ubuntu17.3 [565 kB]
+
+51% [10 gpg 12.6 kB/565 kB 2%]                                                                              187 kB/s 8s
+52% [10 gpg 26.8 kB/565 kB 5%]                                                                              187 kB/s 8s
+60% [10 gpg 357 kB/565 kB 63%]                                                                              187 kB/s 6s
+66% [Waiting for headers]                                                                                   187 kB/s 5s
+                                                                                                                       
+Get:11 http://archive.ubuntu.com/ubuntu noble/main amd64 pinentry-curses amd64 1.2.1-3ubuntu5 [35.2 kB]
+
+66% [11 pinentry-curses 20.5 kB/35.2 kB 58%]                                                                187 kB/s 5s
+68% [Waiting for headers]                                                                                   187 kB/s 5s
+                                                                                                                       
+Get:12 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 gpg-agent amd64 2.4.4-2ubuntu17.3 [227 kB]
+
+68% [12 gpg-agent 4096 B/227 kB 2%]                                                                         187 kB/s 5s
+73% [12 gpg-agent 207 kB/227 kB 91%]                                                                        187 kB/s 4s
+75% [Waiting for headers]                                                                                   187 kB/s 4s
+                                                                                                                       
+Get:13 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 gpgsm amd64 2.4.4-2ubuntu17.3 [232 kB]
+
+75% [13 gpgsm 2660 B/232 kB 1%]                                                                             187 kB/s 4s
+79% [13 gpgsm 189 kB/232 kB 82%]                                                                            187 kB/s 3s
+81% [Waiting for headers]                                                                                   187 kB/s 3s
+                                                                                                                       
+Get:14 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 keyboxd amd64 2.4.4-2ubuntu17.3 [78.3 kB]
+
+81% [14 keyboxd 979 B/78.3 kB 1%]                                                                           187 kB/s 3s
+84% [Waiting for headers]                                                                                   187 kB/s 2s
+                                                                                                                       
+Get:15 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 gnupg all 2.4.4-2ubuntu17.3 [359 kB]
+
+85% [15 gnupg 1794 B/359 kB 0%]                                                                             187 kB/s 2s
+89% [15 gnupg 188 kB/359 kB 52%]                                                                            187 kB/s 1s
+94% [Waiting for headers]                                                                                   187 kB/s 0s
+                                                                                                                       
+Get:16 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 gnupg-l10n all 2.4.4-2ubuntu17.3 [66.4 kB]
+
+94% [16 gnupg-l10n 609 B/66.4 kB 1%]                                                                        187 kB/s 0s
+97% [Waiting for headers]                                                                                   187 kB/s 0s
+                                                                                                                       
+Get:17 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 gpg-wks-client amd64 2.4.4-2ubuntu17.3 [70.9 kB]
+
+97% [17 gpg-wks-client 1819 B/70.9 kB 3%]                                                                   187 kB/s 0s
+98% [17 gpg-wks-client 41.8 kB/70.9 kB 59%]                                                                 187 kB/s 0s
+99% [17 gpg-wks-client 68.6 kB/70.9 kB 97%]                                                                 187 kB/s 0s
+100% [Working]                                                                                              344 kB/s 0s
+                                                                                                                       
+Fetched 3307 kB in 13s (264 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package adduser.
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 5087 files and directories currently installed.)
+Preparing to unpack .../adduser_3.137ubuntu1_all.deb ...
+Unpacking adduser (3.137ubuntu1) ...
+Setting up adduser (3.137ubuntu1) ...
+Selecting previously unselected package readline-common.
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 5135 files and directories currently installed.)
+Preparing to unpack .../00-readline-common_8.2-4build1_all.deb ...
+Unpacking readline-common (8.2-4build1) ...
+Selecting previously unselected package libreadline8t64:amd64.
+Preparing to unpack .../01-libreadline8t64_8.2-4build1_amd64.deb ...
+Adding 'diversion of /lib/x86_64-linux-gnu/libhistory.so.8 to /lib/x86_64-linux-gnu/libhistory.so.8.usr-is-merged by libreadline8t64'
+Adding 'diversion of /lib/x86_64-linux-gnu/libhistory.so.8.2 to /lib/x86_64-linux-gnu/libhistory.so.8.2.usr-is-merged by libreadline8t64'
+Adding 'diversion of /lib/x86_64-linux-gnu/libreadline.so.8 to /lib/x86_64-linux-gnu/libreadline.so.8.usr-is-merged by libreadline8t64'
+Adding 'diversion of /lib/x86_64-linux-gnu/libreadline.so.8.2 to /lib/x86_64-linux-gnu/libreadline.so.8.2.usr-is-merged by libreadline8t64'
+Unpacking libreadline8t64:amd64 (8.2-4build1) ...
+Selecting previously unselected package libsqlite3-0:amd64.
+Preparing to unpack .../02-libsqlite3-0_3.45.1-1ubuntu2.4_amd64.deb ...
+Unpacking libsqlite3-0:amd64 (3.45.1-1ubuntu2.4) ...
+Selecting previously unselected package apt-transport-https.
+Preparing to unpack .../03-apt-transport-https_2.8.3_all.deb ...
+Unpacking apt-transport-https (2.8.3) ...
+Selecting previously unselected package gpgconf.
+Preparing to unpack .../04-gpgconf_2.4.4-2ubuntu17.3_amd64.deb ...
+Unpacking gpgconf (2.4.4-2ubuntu17.3) ...
+Selecting previously unselected package libksba8:amd64.
+Preparing to unpack .../05-libksba8_1.6.6-1build1_amd64.deb ...
+Unpacking libksba8:amd64 (1.6.6-1build1) ...
+Selecting previously unselected package dirmngr.
+Preparing to unpack .../06-dirmngr_2.4.4-2ubuntu17.3_amd64.deb ...
+Unpacking dirmngr (2.4.4-2ubuntu17.3) ...
+Selecting previously unselected package gnupg-utils.
+Preparing to unpack .../07-gnupg-utils_2.4.4-2ubuntu17.3_amd64.deb ...
+Unpacking gnupg-utils (2.4.4-2ubuntu17.3) ...
+Selecting previously unselected package gpg.
+Preparing to unpack .../08-gpg_2.4.4-2ubuntu17.3_amd64.deb ...
+Unpacking gpg (2.4.4-2ubuntu17.3) ...
+Selecting previously unselected package pinentry-curses.
+Preparing to unpack .../09-pinentry-curses_1.2.1-3ubuntu5_amd64.deb ...
+Unpacking pinentry-curses (1.2.1-3ubuntu5) ...
+Selecting previously unselected package gpg-agent.
+Preparing to unpack .../10-gpg-agent_2.4.4-2ubuntu17.3_amd64.deb ...
+Unpacking gpg-agent (2.4.4-2ubuntu17.3) ...
+Selecting previously unselected package gpgsm.
+Preparing to unpack .../11-gpgsm_2.4.4-2ubuntu17.3_amd64.deb ...
+Unpacking gpgsm (2.4.4-2ubuntu17.3) ...
+Selecting previously unselected package keyboxd.
+Preparing to unpack .../12-keyboxd_2.4.4-2ubuntu17.3_amd64.deb ...
+Unpacking keyboxd (2.4.4-2ubuntu17.3) ...
+Selecting previously unselected package gnupg.
+Preparing to unpack .../13-gnupg_2.4.4-2ubuntu17.3_all.deb ...
+Unpacking gnupg (2.4.4-2ubuntu17.3) ...
+Selecting previously unselected package gnupg-l10n.
+Preparing to unpack .../14-gnupg-l10n_2.4.4-2ubuntu17.3_all.deb ...
+Unpacking gnupg-l10n (2.4.4-2ubuntu17.3) ...
+Selecting previously unselected package gpg-wks-client.
+Preparing to unpack .../15-gpg-wks-client_2.4.4-2ubuntu17.3_amd64.deb ...
+Unpacking gpg-wks-client (2.4.4-2ubuntu17.3) ...
+Setting up libksba8:amd64 (1.6.6-1build1) ...
+Setting up pinentry-curses (1.2.1-3ubuntu5) ...
+Setting up apt-transport-https (2.8.3) ...
+Setting up libsqlite3-0:amd64 (3.45.1-1ubuntu2.4) ...
+Setting up gnupg-l10n (2.4.4-2ubuntu17.3) ...
+Setting up readline-common (8.2-4build1) ...
+Setting up gnupg-utils (2.4.4-2ubuntu17.3) ...
+Setting up libreadline8t64:amd64 (8.2-4build1) ...
+Setting up gpgconf (2.4.4-2ubuntu17.3) ...
+Setting up gpg (2.4.4-2ubuntu17.3) ...
+Setting up gpg-agent (2.4.4-2ubuntu17.3) ...
+Setting up gpgsm (2.4.4-2ubuntu17.3) ...
+Setting up dirmngr (2.4.4-2ubuntu17.3) ...
+Setting up keyboxd (2.4.4-2ubuntu17.3) ...
+Setting up gnupg (2.4.4-2ubuntu17.3) ...
+Setting up gpg-wks-client (2.4.4-2ubuntu17.3) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.5) ...
+
+0% [Working]
+0% [Connected to deb.nodesource.com (104.20.45.190)] [Waiting for headers] [Waiting for headers]
+                                                                                                
+Hit:1 http://archive.ubuntu.com/ubuntu noble InRelease
+
+                                                                                                
+Hit:2 http://security.ubuntu.com/ubuntu noble-security InRelease
+
+                                                                                                
+0% [Connected to deb.nodesource.com (104.20.45.190)]
+                                                    
+0% [Waiting for headers] [Waiting for headers]
+                                              
+Hit:3 http://archive.ubuntu.com/ubuntu noble-updates InRelease
+
+                                              
+0% [Waiting for headers]
+0% [Waiting for headers] [Waiting for headers]
+                                              
+Get:4 https://deb.nodesource.com/node_20.x nodistro InRelease [12.1 kB]
+
+0% [4 InRelease 817 B/12.1 kB 7%] [Waiting for headers]
+0% [4 InRelease 6293 B/12.1 kB 52%] [Waiting for headers]
+                                                         
+Hit:5 http://archive.ubuntu.com/ubuntu noble-backports InRelease
+
+                                                         
+0% [4 InRelease 6293 B/12.1 kB 52%]
+                                   
+0% [Working]
+0% [Working]
+59% [Working]
+             
+Get:6 https://deb.nodesource.com/node_20.x nodistro/main amd64 Packages [12.4 kB]
+
+75% [6 Packages 4841 B/12.4 kB 39%]
+                                   
+99% [Working]
+99% [6 Packages store 0 B]
+                          
+100% [Working]
+              
+Fetched 24.6 kB in 2s (14.2 kB/s)
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+Reading package lists... Done
+
+Building dependency tree... 0%
+
+Building dependency tree... 0%
+
+Building dependency tree... 50%
+
+Building dependency tree... 50%
+
+Building dependency tree... 50%
+
+Building dependency tree... Done
+
+Reading state information... 0% 
+
+Reading state information... 2%
+
+Reading state information... Done
+The following additional packages will be installed:
+  libexpat1 libpython3-stdlib libpython3.12-minimal libpython3.12-stdlib media-types netbase python3 python3-minimal
+  python3.12 python3.12-minimal tzdata
+Suggested packages:
+  python3-doc python3-tk python3-venv python3.12-venv python3.12-doc binutils binfmt-support
+The following NEW packages will be installed:
+  libexpat1 libpython3-stdlib libpython3.12-minimal libpython3.12-stdlib media-types netbase nodejs python3
+  python3-minimal python3.12 python3.12-minimal tzdata
+0 upgraded, 12 newly installed, 0 to remove and 1 not upgraded.
+Need to get 38.4 MB of archives.
+After this operation, 225 MB of additional disk space will be used.
+[33m
+0% [Working][0m[33m
+0% [Waiting for headers] [Connected to deb.nodesource.com (104.20.45.190)][0m
+                                                                          
+Get:1 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libpython3.12-minimal amd64 3.12.3-1ubuntu0.8 [836 kB]
+[33m
+0% [1 libpython3.12-minimal 4052 B/836 kB 0%] [Connected to deb.nodesource.com (104.20.45.190)][0m
+                                                                                               
+Get:2 https://deb.nodesource.com/node_20.x nodistro/main amd64 nodejs amd64 20.19.4-1nodesource1 [32.0 MB]
+[33m
+                                                                                               
+0% [1 libpython3.12-minimal 13.8 kB/836 kB 2%] [2 nodejs 4096 B/32.0 MB 0%][0m[33m
+0% [1 libpython3.12-minimal 52.0 kB/836 kB 6%] [2 nodejs 8886 B/32.0 MB 0%][0m[33m
+0% [1 libpython3.12-minimal 149 kB/836 kB 18%] [2 nodejs 72.3 kB/32.0 MB 0%][0m[33m
+1% [1 libpython3.12-minimal 226 kB/836 kB 27%] [2 nodejs 80.8 kB/32.0 MB 0%][0m[33m
+                                                                            
+1% [1 libpython3.12-minimal 247 kB/836 kB 30%] [2 nodejs 127 kB/32.0 MB 0%][0m[33m
+1% [1 libpython3.12-minimal 262 kB/836 kB 31%] [2 nodejs 195 kB/32.0 MB 1%][0m[33m
+1% [1 libpython3.12-minimal 457 kB/836 kB 55%] [2 nodejs 257 kB/32.0 MB 1%][0m[33m
+2% [1 libpython3.12-minimal 618 kB/836 kB 74%] [2 nodejs 257 kB/32.0 MB 1%][0m[33m
+2% [1 libpython3.12-minimal 813 kB/836 kB 97%] [2 nodejs 307 kB/32.0 MB 1%][0m[33m
+                                                                           
+4% [2 nodejs 339 kB/32.0 MB 1%][0m
+                               
+Get:3 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libexpat1 amd64 2.6.1-2ubuntu0.3 [88.0 kB]
+[33m
+4% [3 libexpat1 2533 B/88.0 kB 3%] [2 nodejs 339 kB/32.0 MB 1%][0m[33m
+                                                               
+6% [Waiting for headers] [2 nodejs 372 kB/32.0 MB 1%][0m
+                                                     
+Get:4 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 python3.12-minimal amd64 3.12.3-1ubuntu0.8 [2334 kB]
+[33m
+6% [4 python3.12-minimal 1747 B/2334 kB 0%] [2 nodejs 372 kB/32.0 MB 1%][0m[33m
+6% [4 python3.12-minimal 98.7 kB/2334 kB 4%] [2 nodejs 372 kB/32.0 MB 1%][0m[33m
+6% [4 python3.12-minimal 109 kB/2334 kB 5%] [2 nodejs 372 kB/32.0 MB 1%]                              218 kB/s 2min 49s[0m[33m
+7% [4 python3.12-minimal 192 kB/2334 kB 8%] [2 nodejs 438 kB/32.0 MB 1%]                              218 kB/s 2min 48s[0m[33m
+7% [4 python3.12-minimal 433 kB/2334 kB 19%] [2 nodejs 487 kB/32.0 MB 2%]                             218 kB/s 2min 47s[0m[33m
+7% [4 python3.12-minimal 477 kB/2334 kB 20%] [2 nodejs 487 kB/32.0 MB 2%]                             218 kB/s 2min 47s[0m[33m
+8% [4 python3.12-minimal 618 kB/2334 kB 26%] [2 nodejs 487 kB/32.0 MB 2%]                             218 kB/s 2min 46s[0m[33m
+8% [4 python3.12-minimal 740 kB/2334 kB 32%] [2 nodejs 552 kB/32.0 MB 2%]                             218 kB/s 2min 45s[0m[33m
+8% [4 python3.12-minimal 779 kB/2334 kB 33%] [2 nodejs 552 kB/32.0 MB 2%]                             218 kB/s 2min 45s[0m[33m
+9% [4 python3.12-minimal 1005 kB/2334 kB 43%] [2 nodejs 601 kB/32.0 MB 2%]                            218 kB/s 2min 44s[0m[33m
+9% [4 python3.12-minimal 1334 kB/2334 kB 57%] [2 nodejs 634 kB/32.0 MB 2%]                            218 kB/s 2min 42s[0m[33m
+10% [4 python3.12-minimal 1495 kB/2334 kB 64%] [2 nodejs 667 kB/32.0 MB 2%]                           218 kB/s 2min 41s[0m[33m
+10% [4 python3.12-minimal 1608 kB/2334 kB 69%] [2 nodejs 716 kB/32.0 MB 2%]                           218 kB/s 2min 40s[0m[33m
+10% [4 python3.12-minimal 1690 kB/2334 kB 72%] [2 nodejs 732 kB/32.0 MB 2%]                           218 kB/s 2min 40s[0m[33m
+10% [4 python3.12-minimal 1690 kB/2334 kB 72%] [2 nodejs 732 kB/32.0 MB 2%]                           323 kB/s 1min 48s[0m[33m
+11% [4 python3.12-minimal 1871 kB/2334 kB 80%] [2 nodejs 749 kB/32.0 MB 2%]                           323 kB/s 1min 47s[0m[33m
+11% [4 python3.12-minimal 1998 kB/2334 kB 86%] [2 nodejs 814 kB/32.0 MB 3%]                           323 kB/s 1min 47s[0m[33m
+11% [4 python3.12-minimal 2101 kB/2334 kB 90%] [2 nodejs 831 kB/32.0 MB 3%]                           323 kB/s 1min 46s[0m[33m
+11% [4 python3.12-minimal 2101 kB/2334 kB 90%] [2 nodejs 831 kB/32.0 MB 3%]                           323 kB/s 1min 46s[0m[33m
+12% [4 python3.12-minimal 2313 kB/2334 kB 99%] [2 nodejs 880 kB/32.0 MB 3%]                           323 kB/s 1min 46s[0m[33m
+14% [Waiting for headers] [2 nodejs 880 kB/32.0 MB 3%]                                                323 kB/s 1min 45s[0m
+                                                                                                                       
+Get:5 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 python3-minimal amd64 3.12.3-0ubuntu2 [27.4 kB]
+[33m
+14% [5 python3-minimal 13.8 kB/27.4 kB 51%] [2 nodejs 880 kB/32.0 MB 3%]                              323 kB/s 1min 45s[0m[33m
+15% [Waiting for headers] [2 nodejs 913 kB/32.0 MB 3%]                                                323 kB/s 1min 45s[0m
+                                                                                                                       
+Get:6 http://archive.ubuntu.com/ubuntu noble/main amd64 media-types all 10.1.0 [27.5 kB]
+[33m
+15% [6 media-types 284 B/27.5 kB 1%] [2 nodejs 913 kB/32.0 MB 3%]                                     323 kB/s 1min 45s[0m[33m
+17% [Waiting for headers] [2 nodejs 913 kB/32.0 MB 3%]                                                323 kB/s 1min 45s[0m
+                                                                                                                       
+Get:7 http://archive.ubuntu.com/ubuntu noble/main amd64 netbase all 6.4 [13.1 kB]
+[33m
+17% [7 netbase 760 B/13.1 kB 6%] [2 nodejs 913 kB/32.0 MB 3%]                                         323 kB/s 1min 45s[0m[33m
+19% [Waiting for headers] [2 nodejs 913 kB/32.0 MB 3%]                                                323 kB/s 1min 45s[0m
+                                                                                                                       
+Get:8 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 tzdata all 2025b-0ubuntu0.24.04.1 [276 kB]
+[33m
+19% [8 tzdata 1708 B/276 kB 1%] [2 nodejs 913 kB/32.0 MB 3%]                                          323 kB/s 1min 45s[0m[33m
+19% [8 tzdata 141 kB/276 kB 51%] [2 nodejs 945 kB/32.0 MB 3%]                                         323 kB/s 1min 45s[0m
+                                                                                                                       
+Get:9 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libpython3.12-stdlib amd64 3.12.3-1ubuntu0.8 [2068 kB]
+[33m
+21% [9 libpython3.12-stdlib 24 B/2068 kB 0%] [2 nodejs 978 kB/32.0 MB 3%]                             323 kB/s 1min 44s[0m[33m
+22% [9 libpython3.12-stdlib 135 kB/2068 kB 7%] [2 nodejs 1027 kB/32.0 MB 3%]                          323 kB/s 1min 44s[0m[33m
+22% [9 libpython3.12-stdlib 265 kB/2068 kB 13%] [2 nodejs 1060 kB/32.0 MB 3%]                         323 kB/s 1min 43s[0m[33m
+22% [9 libpython3.12-stdlib 351 kB/2068 kB 17%] [2 nodejs 1060 kB/32.0 MB 3%]                         323 kB/s 1min 43s[0m[33m
+22% [9 libpython3.12-stdlib 392 kB/2068 kB 19%] [2 nodejs 1093 kB/32.0 MB 3%]                         323 kB/s 1min 43s[0m[33m
+23% [9 libpython3.12-stdlib 549 kB/2068 kB 27%] [2 nodejs 1126 kB/32.0 MB 4%]                         309 kB/s 1min 47s[0m[33m
+23% [9 libpython3.12-stdlib 577 kB/2068 kB 28%] [2 nodejs 1175 kB/32.0 MB 4%]                         309 kB/s 1min 47s[0m[33m
+23% [9 libpython3.12-stdlib 685 kB/2068 kB 33%] [2 nodejs 1175 kB/32.0 MB 4%]                         309 kB/s 1min 46s[0m[33m
+24% [9 libpython3.12-stdlib 925 kB/2068 kB 45%] [2 nodejs 1257 kB/32.0 MB 4%]                         309 kB/s 1min 45s[0m[33m
+24% [9 libpython3.12-stdlib 1132 kB/2068 kB 55%] [2 nodejs 1290 kB/32.0 MB 4%]                        309 kB/s 1min 44s[0m[33m
+25% [9 libpython3.12-stdlib 1271 kB/2068 kB 61%] [2 nodejs 1322 kB/32.0 MB 4%]                        309 kB/s 1min 44s[0m[33m
+25% [9 libpython3.12-stdlib 1279 kB/2068 kB 62%] [2 nodejs 1322 kB/32.0 MB 4%]                        309 kB/s 1min 44s[0m[33m
+25% [9 libpython3.12-stdlib 1279 kB/2068 kB 62%] [2 nodejs 1339 kB/32.0 MB 4%]                        309 kB/s 1min 44s[0m[33m
+25% [9 libpython3.12-stdlib 1515 kB/2068 kB 73%] [2 nodejs 1388 kB/32.0 MB 4%]                        309 kB/s 1min 43s[0m[33m
+25% [9 libpython3.12-stdlib 1525 kB/2068 kB 74%] [2 nodejs 1388 kB/32.0 MB 4%]                        309 kB/s 1min 43s[0m[33m
+26% [9 libpython3.12-stdlib 1779 kB/2068 kB 86%] [2 nodejs 1486 kB/32.0 MB 5%]                        309 kB/s 1min 42s[0m[33m
+26% [9 libpython3.12-stdlib 1920 kB/2068 kB 93%] [2 nodejs 1535 kB/32.0 MB 5%]                        309 kB/s 1min 41s[0m[33m
+27% [9 libpython3.12-stdlib 2059 kB/2068 kB 100%] [2 nodejs 1601 kB/32.0 MB 5%]                       330 kB/s 1min 34s[0m[33m
+28% [Waiting for headers] [2 nodejs 1601 kB/32.0 MB 5%]                                               330 kB/s 1min 34s[0m
+                                                                                                                       
+Get:10 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 python3.12 amd64 3.12.3-1ubuntu0.8 [651 kB]
+[33m
+28% [10 python3.12 1278 B/651 kB 0%] [2 nodejs 1601 kB/32.0 MB 5%]                                    330 kB/s 1min 34s[0m[33m
+29% [10 python3.12 32.3 kB/651 kB 5%] [2 nodejs 1601 kB/32.0 MB 5%]                                   330 kB/s 1min 34s[0m[33m
+29% [10 python3.12 57.8 kB/651 kB 9%] [2 nodejs 1634 kB/32.0 MB 5%]                                   330 kB/s 1min 33s[0m[33m
+29% [10 python3.12 57.8 kB/651 kB 9%] [2 nodejs 1666 kB/32.0 MB 5%]                                   330 kB/s 1min 33s[0m[33m
+29% [10 python3.12 214 kB/651 kB 33%] [2 nodejs 1716 kB/32.0 MB 5%]                                   330 kB/s 1min 33s[0m[33m
+30% [10 python3.12 394 kB/651 kB 61%] [2 nodejs 1716 kB/32.0 MB 5%]                                   330 kB/s 1min 32s[0m[33m
+30% [10 python3.12 394 kB/651 kB 61%] [2 nodejs 1814 kB/32.0 MB 6%]                                   330 kB/s 1min 32s[0m[33m
+30% [10 python3.12 607 kB/651 kB 93%] [2 nodejs 1879 kB/32.0 MB 6%]                                   330 kB/s 1min 31s[0m[33m
+32% [Waiting for headers] [2 nodejs 1896 kB/32.0 MB 6%]                                               330 kB/s 1min 31s[0m
+                                                                                                                       
+Get:11 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libpython3-stdlib amd64 3.12.3-0ubuntu2 [10.0 kB]
+[33m
+32% [11 libpython3-stdlib 10.0 kB/10.0 kB 100%] [2 nodejs 1896 kB/32.0 MB 6%]                         330 kB/s 1min 31s[0m[33m
+34% [2 nodejs 1896 kB/32.0 MB 6%]                                                                     330 kB/s 1min 31s[0m
+                                                                                                                       
+Get:12 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 python3 amd64 3.12.3-0ubuntu2 [23.0 kB]
+[33m
+34% [12 python3 23.0 kB/23.0 kB 100%] [2 nodejs 1896 kB/32.0 MB 6%]                                   330 kB/s 1min 31s[0m[33m
+36% [2 nodejs 1896 kB/32.0 MB 6%]                                                                     330 kB/s 1min 31s[0m[33m
+36% [2 nodejs 1978 kB/32.0 MB 6%]                                                                     330 kB/s 1min 31s[0m[33m
+36% [2 nodejs 2010 kB/32.0 MB 6%]                                                                     330 kB/s 1min 30s[0m[33m
+36% [2 nodejs 2125 kB/32.0 MB 7%]                                                                     330 kB/s 1min 30s[0m[33m
+36% [2 nodejs 2191 kB/32.0 MB 7%]                                                                     330 kB/s 1min 30s[0m[33m
+36% [2 nodejs 2305 kB/32.0 MB 7%]                                                                     227 kB/s 2min 10s[0m[33m
+36% [2 nodejs 2322 kB/32.0 MB 7%]                                                                     227 kB/s 2min 10s[0m[33m
+37% [2 nodejs 2453 kB/32.0 MB 8%]                                                                     227 kB/s 2min 10s[0m[33m
+37% [2 nodejs 2518 kB/32.0 MB 8%]                                                                     227 kB/s 2min 10s[0m[33m
+37% [2 nodejs 2633 kB/32.0 MB 8%]                                                                      227 kB/s 2min 9s[0m[33m
+37% [2 nodejs 2748 kB/32.0 MB 9%]                                                                      227 kB/s 2min 9s[0m[33m
+38% [2 nodejs 2912 kB/32.0 MB 9%]                                                                      227 kB/s 2min 8s[0m[33m
+38% [2 nodejs 2912 kB/32.0 MB 9%]                                                                      227 kB/s 2min 8s[0m[33m
+38% [2 nodejs 3157 kB/32.0 MB 10%]                                                                     227 kB/s 2min 7s[0m[33m
+38% [2 nodejs 3272 kB/32.0 MB 10%]                                                                     227 kB/s 2min 6s[0m[33m
+39% [2 nodejs 3436 kB/32.0 MB 11%]                                                                     227 kB/s 2min 5s[0m[33m
+39% [2 nodejs 3600 kB/32.0 MB 11%]                                                                     227 kB/s 2min 5s[0m[33m
+39% [2 nodejs 3731 kB/32.0 MB 12%]                                                                    237 kB/s 1min 59s[0m[33m
+40% [2 nodejs 3895 kB/32.0 MB 12%]                                                                    237 kB/s 1min 58s[0m[33m
+40% [2 nodejs 4108 kB/32.0 MB 13%]                                                                    237 kB/s 1min 57s[0m[33m
+40% [2 nodejs 4255 kB/32.0 MB 13%]                                                                    237 kB/s 1min 57s[0m[33m
+40% [2 nodejs 4271 kB/32.0 MB 13%]                                                                    237 kB/s 1min 57s[0m[33m
+41% [2 nodejs 4517 kB/32.0 MB 14%]                                                                    237 kB/s 1min 56s[0m[33m
+41% [2 nodejs 4616 kB/32.0 MB 14%]                                                                    237 kB/s 1min 55s[0m[33m
+41% [2 nodejs 4730 kB/32.0 MB 15%]                                                                    237 kB/s 1min 55s[0m[33m
+42% [2 nodejs 4861 kB/32.0 MB 15%]                                                                    237 kB/s 1min 54s[0m[33m
+42% [2 nodejs 5009 kB/32.0 MB 16%]                                                                    237 kB/s 1min 53s[0m[33m
+42% [2 nodejs 5074 kB/32.0 MB 16%]                                                                    237 kB/s 1min 53s[0m[33m
+42% [2 nodejs 5140 kB/32.0 MB 16%]                                                                    237 kB/s 1min 53s[0m[33m
+43% [2 nodejs 5435 kB/32.0 MB 17%]                                                                    283 kB/s 1min 33s[0m[33m
+43% [2 nodejs 5435 kB/32.0 MB 17%]                                                                    283 kB/s 1min 33s[0m[33m
+44% [2 nodejs 5730 kB/32.0 MB 18%]                                                                    283 kB/s 1min 32s[0m[33m
+44% [2 nodejs 5762 kB/32.0 MB 18%]                                                                    283 kB/s 1min 32s[0m[33m
+44% [2 nodejs 5943 kB/32.0 MB 19%]                                                                    283 kB/s 1min 32s[0m[33m
+44% [2 nodejs 6090 kB/32.0 MB 19%]                                                                    283 kB/s 1min 31s[0m[33m
+44% [2 nodejs 6090 kB/32.0 MB 19%]                                                                    283 kB/s 1min 31s[0m[33m
+45% [2 nodejs 6205 kB/32.0 MB 19%]                                                                    283 kB/s 1min 31s[0m[33m
+45% [2 nodejs 6205 kB/32.0 MB 19%]                                                                    283 kB/s 1min 31s[0m[33m
+45% [2 nodejs 6238 kB/32.0 MB 19%]                                                                    283 kB/s 1min 30s[0m[33m
+45% [2 nodejs 6352 kB/32.0 MB 20%]                                                                    283 kB/s 1min 30s[0m[33m
+45% [2 nodejs 6401 kB/32.0 MB 20%]                                                                    283 kB/s 1min 30s[0m[33m
+45% [2 nodejs 6500 kB/32.0 MB 20%]                                                                    177 kB/s 2min 24s[0m[33m
+45% [2 nodejs 6631 kB/32.0 MB 21%]                                                                    177 kB/s 2min 23s[0m[33m
+46% [2 nodejs 6762 kB/32.0 MB 21%]                                                                    177 kB/s 2min 22s[0m[33m
+46% [2 nodejs 6876 kB/32.0 MB 21%]                                                                    177 kB/s 2min 21s[0m[33m
+46% [2 nodejs 6975 kB/32.0 MB 22%]                                                                    177 kB/s 2min 21s[0m[33m
+46% [2 nodejs 7106 kB/32.0 MB 22%]                                                                    177 kB/s 2min 20s[0m[33m
+47% [2 nodejs 7253 kB/32.0 MB 23%]                                                                    177 kB/s 2min 19s[0m[33m
+47% [2 nodejs 7352 kB/32.0 MB 23%]                                                                    177 kB/s 2min 19s[0m[33m
+47% [2 nodejs 7483 kB/32.0 MB 23%]                                                                    177 kB/s 2min 18s[0m[33m
+48% [2 nodejs 7663 kB/32.0 MB 24%]                                                                    177 kB/s 2min 17s[0m[33m
+48% [2 nodejs 7745 kB/32.0 MB 24%]                                                                    177 kB/s 2min 17s[0m[33m
+48% [2 nodejs 7827 kB/32.0 MB 24%]                                                                    177 kB/s 2min 16s[0m[33m
+48% [2 nodejs 7909 kB/32.0 MB 25%]                                                                    234 kB/s 1min 42s[0m[33m
+48% [2 nodejs 7958 kB/32.0 MB 25%]                                                                    234 kB/s 1min 42s[0m[33m
+48% [2 nodejs 8089 kB/32.0 MB 25%]                                                                    234 kB/s 1min 42s[0m[33m
+49% [2 nodejs 8187 kB/32.0 MB 26%]                                                                    234 kB/s 1min 41s[0m[33m
+49% [2 nodejs 8269 kB/32.0 MB 26%]                                                                    234 kB/s 1min 41s[0m[33m
+49% [2 nodejs 8466 kB/32.0 MB 26%]                                                                    234 kB/s 1min 40s[0m[33m
+49% [2 nodejs 8580 kB/32.0 MB 27%]                                                                    234 kB/s 1min 40s[0m[33m
+50% [2 nodejs 8662 kB/32.0 MB 27%]                                                                    234 kB/s 1min 39s[0m[33m
+50% [2 nodejs 8744 kB/32.0 MB 27%]                                                                    234 kB/s 1min 39s[0m[33m
+50% [2 nodejs 8793 kB/32.0 MB 27%]                                                                    234 kB/s 1min 39s[0m[33m
+50% [2 nodejs 8875 kB/32.0 MB 28%]                                                                    234 kB/s 1min 38s[0m[33m
+50% [2 nodejs 9006 kB/32.0 MB 28%]                                                                    234 kB/s 1min 38s[0m[33m
+51% [2 nodejs 9105 kB/32.0 MB 28%]                                                                    199 kB/s 1min 55s[0m[33m
+51% [2 nodejs 9170 kB/32.0 MB 29%]                                                                    199 kB/s 1min 54s[0m[33m
+51% [2 nodejs 9269 kB/32.0 MB 29%]                                                                    199 kB/s 1min 54s[0m[33m
+51% [2 nodejs 9367 kB/32.0 MB 29%]                                                                    199 kB/s 1min 53s[0m[33m
+51% [2 nodejs 9465 kB/32.0 MB 30%]                                                                    199 kB/s 1min 53s[0m[33m
+52% [2 nodejs 9563 kB/32.0 MB 30%]                                                                    199 kB/s 1min 52s[0m[33m
+52% [2 nodejs 9629 kB/32.0 MB 30%]                                                                    199 kB/s 1min 52s[0m[33m
+52% [2 nodejs 9678 kB/32.0 MB 30%]                                                                    199 kB/s 1min 52s[0m[33m
+52% [2 nodejs 9711 kB/32.0 MB 30%]                                                                    199 kB/s 1min 52s[0m[33m
+52% [2 nodejs 9826 kB/32.0 MB 31%]                                                                    199 kB/s 1min 51s[0m[33m
+52% [2 nodejs 9908 kB/32.0 MB 31%]                                                                    199 kB/s 1min 51s[0m[33m
+52% [2 nodejs 9989 kB/32.0 MB 31%]                                                                    199 kB/s 1min 50s[0m[33m
+53% [2 nodejs 10.1 MB/32.0 MB 31%]                                                                    163 kB/s 2min 14s[0m[33m
+53% [2 nodejs 10.2 MB/32.0 MB 32%]                                                                    163 kB/s 2min 13s[0m[33m
+53% [2 nodejs 10.3 MB/32.0 MB 32%]                                                                    163 kB/s 2min 13s[0m[33m
+53% [2 nodejs 10.4 MB/32.0 MB 32%]                                                                    163 kB/s 2min 12s[0m[33m
+53% [2 nodejs 10.4 MB/32.0 MB 33%]                                                                    163 kB/s 2min 12s[0m[33m
+54% [2 nodejs 10.5 MB/32.0 MB 33%]                                                                    163 kB/s 2min 11s[0m[33m
+54% [2 nodejs 10.6 MB/32.0 MB 33%]                                                                    163 kB/s 2min 11s[0m[33m
+54% [2 nodejs 10.7 MB/32.0 MB 34%]                                                                    163 kB/s 2min 10s[0m[33m
+54% [2 nodejs 10.8 MB/32.0 MB 34%]                                                                    163 kB/s 2min 10s[0m[33m
+54% [2 nodejs 11.0 MB/32.0 MB 34%]                                                                     163 kB/s 2min 9s[0m[33m
+55% [2 nodejs 11.0 MB/32.0 MB 34%]                                                                     163 kB/s 2min 8s[0m[33m
+55% [2 nodejs 11.2 MB/32.0 MB 35%]                                                                     163 kB/s 2min 8s[0m[33m
+55% [2 nodejs 11.2 MB/32.0 MB 35%]                                                                    189 kB/s 1min 50s[0m[33m
+55% [2 nodejs 11.3 MB/32.0 MB 35%]                                                                    189 kB/s 1min 50s[0m[33m
+55% [2 nodejs 11.4 MB/32.0 MB 36%]                                                                    189 kB/s 1min 49s[0m[33m
+55% [2 nodejs 11.4 MB/32.0 MB 36%]                                                                    189 kB/s 1min 49s[0m[33m
+56% [2 nodejs 11.6 MB/32.0 MB 36%]                                                                    189 kB/s 1min 48s[0m[33m
+56% [2 nodejs 11.6 MB/32.0 MB 36%]                                                                    189 kB/s 1min 48s[0m[33m
+56% [2 nodejs 11.7 MB/32.0 MB 36%]                                                                    189 kB/s 1min 47s[0m[33m
+56% [2 nodejs 11.7 MB/32.0 MB 37%]                                                                    189 kB/s 1min 47s[0m[33m
+56% [2 nodejs 11.9 MB/32.0 MB 37%]                                                                    189 kB/s 1min 46s[0m[33m
+57% [2 nodejs 12.0 MB/32.0 MB 37%]                                                                    189 kB/s 1min 46s[0m[33m
+57% [2 nodejs 12.1 MB/32.0 MB 38%]                                                                    189 kB/s 1min 45s[0m[33m
+57% [2 nodejs 12.3 MB/32.0 MB 38%]                                                                    189 kB/s 1min 44s[0m[33m
+57% [2 nodejs 12.4 MB/32.0 MB 39%]                                                                    191 kB/s 1min 43s[0m[33m
+58% [2 nodejs 12.5 MB/32.0 MB 39%]                                                                    191 kB/s 1min 42s[0m[33m
+58% [2 nodejs 12.7 MB/32.0 MB 40%]                                                                    191 kB/s 1min 41s[0m[33m
+58% [2 nodejs 12.8 MB/32.0 MB 40%]                                                                    191 kB/s 1min 40s[0m[33m
+58% [2 nodejs 12.9 MB/32.0 MB 40%]                                                                    191 kB/s 1min 40s[0m[33m
+59% [2 nodejs 13.1 MB/32.0 MB 41%]                                                                    191 kB/s 1min 39s[0m[33m
+59% [2 nodejs 13.2 MB/32.0 MB 41%]                                                                    191 kB/s 1min 38s[0m[33m
+59% [2 nodejs 13.4 MB/32.0 MB 42%]                                                                    191 kB/s 1min 37s[0m[33m
+60% [2 nodejs 13.5 MB/32.0 MB 42%]                                                                    191 kB/s 1min 37s[0m[33m
+60% [2 nodejs 13.7 MB/32.0 MB 43%]                                                                    191 kB/s 1min 36s[0m[33m
+60% [2 nodejs 13.8 MB/32.0 MB 43%]                                                                    191 kB/s 1min 35s[0m[33m
+61% [2 nodejs 14.0 MB/32.0 MB 44%]                                                                    191 kB/s 1min 34s[0m[33m
+61% [2 nodejs 14.1 MB/32.0 MB 44%]                                                                     286 kB/s 1min 2s[0m[33m
+61% [2 nodejs 14.3 MB/32.0 MB 45%]                                                                     286 kB/s 1min 2s[0m[33m
+62% [2 nodejs 14.4 MB/32.0 MB 45%]                                                                     286 kB/s 1min 1s[0m[33m
+62% [2 nodejs 14.5 MB/32.0 MB 45%]                                                                     286 kB/s 1min 1s[0m[33m
+62% [2 nodejs 14.6 MB/32.0 MB 46%]                                                                         286 kB/s 60s[0m[33m
+62% [2 nodejs 14.7 MB/32.0 MB 46%]                                                                         286 kB/s 60s[0m[33m
+62% [2 nodejs 14.8 MB/32.0 MB 46%]                                                                         286 kB/s 60s[0m[33m
+62% [2 nodejs 14.8 MB/32.0 MB 46%]                                                                         286 kB/s 60s[0m[33m
+63% [2 nodejs 14.9 MB/32.0 MB 46%]                                                                         286 kB/s 59s[0m[33m
+63% [2 nodejs 14.9 MB/32.0 MB 46%]                                                                         286 kB/s 59s[0m[33m
+63% [2 nodejs 15.2 MB/32.0 MB 47%]                                                                         286 kB/s 58s[0m[33m
+63% [2 nodejs 15.3 MB/32.0 MB 48%]                                                                         286 kB/s 58s[0m[33m
+64% [2 nodejs 15.4 MB/32.0 MB 48%]                                                                    218 kB/s 1min 16s[0m[33m
+64% [2 nodejs 15.5 MB/32.0 MB 48%]                                                                    218 kB/s 1min 15s[0m[33m
+64% [2 nodejs 15.7 MB/32.0 MB 49%]                                                                    218 kB/s 1min 15s[0m[33m
+64% [2 nodejs 15.7 MB/32.0 MB 49%]                                                                    218 kB/s 1min 15s[0m[33m
+65% [2 nodejs 15.8 MB/32.0 MB 49%]                                                                    218 kB/s 1min 14s[0m[33m
+65% [2 nodejs 16.0 MB/32.0 MB 50%]                                                                    218 kB/s 1min 13s[0m[33m
+65% [2 nodejs 16.1 MB/32.0 MB 50%]                                                                    218 kB/s 1min 12s[0m[33m
+65% [2 nodejs 16.1 MB/32.0 MB 50%]                                                                    218 kB/s 1min 12s[0m[33m
+66% [2 nodejs 16.3 MB/32.0 MB 51%]                                                                    218 kB/s 1min 11s[0m[33m
+66% [2 nodejs 16.4 MB/32.0 MB 51%]                                                                    218 kB/s 1min 11s[0m[33m
+66% [2 nodejs 16.5 MB/32.0 MB 52%]                                                                    218 kB/s 1min 11s[0m[33m
+66% [2 nodejs 16.6 MB/32.0 MB 52%]                                                                    218 kB/s 1min 10s[0m[33m
+66% [2 nodejs 16.7 MB/32.0 MB 52%]                                                                    215 kB/s 1min 11s[0m[33m
+67% [2 nodejs 16.8 MB/32.0 MB 53%]                                                                    215 kB/s 1min 10s[0m[33m
+67% [2 nodejs 16.9 MB/32.0 MB 53%]                                                                    215 kB/s 1min 10s[0m[33m
+67% [2 nodejs 17.1 MB/32.0 MB 53%]                                                                     215 kB/s 1min 9s[0m[33m
+67% [2 nodejs 17.1 MB/32.0 MB 53%]                                                                     215 kB/s 1min 9s[0m[33m
+67% [2 nodejs 17.2 MB/32.0 MB 54%]                                                                     215 kB/s 1min 8s[0m[33m
+68% [2 nodejs 17.3 MB/32.0 MB 54%]                                                                     215 kB/s 1min 8s[0m[33m
+68% [2 nodejs 17.3 MB/32.0 MB 54%]                                                                     215 kB/s 1min 8s[0m[33m
+68% [2 nodejs 17.5 MB/32.0 MB 55%]                                                                     215 kB/s 1min 7s[0m[33m
+68% [2 nodejs 17.5 MB/32.0 MB 55%]                                                                     215 kB/s 1min 7s[0m[33m
+68% [2 nodejs 17.7 MB/32.0 MB 55%]                                                                     215 kB/s 1min 6s[0m[33m
+69% [2 nodejs 17.8 MB/32.0 MB 55%]                                                                     215 kB/s 1min 6s[0m[33m
+69% [2 nodejs 17.8 MB/32.0 MB 56%]                                                                    191 kB/s 1min 14s[0m[33m
+69% [2 nodejs 18.0 MB/32.0 MB 56%]                                                                    191 kB/s 1min 13s[0m[33m
+69% [2 nodejs 18.1 MB/32.0 MB 56%]                                                                    191 kB/s 1min 13s[0m[33m
+69% [2 nodejs 18.1 MB/32.0 MB 57%]                                                                    191 kB/s 1min 12s[0m[33m
+70% [2 nodejs 18.2 MB/32.0 MB 57%]                                                                    191 kB/s 1min 12s[0m[33m
+70% [2 nodejs 18.2 MB/32.0 MB 57%]                                                                    191 kB/s 1min 12s[0m[33m
+70% [2 nodejs 18.4 MB/32.0 MB 57%]                                                                    191 kB/s 1min 11s[0m[33m
+70% [2 nodejs 18.4 MB/32.0 MB 58%]                                                                    191 kB/s 1min 11s[0m[33m
+70% [2 nodejs 18.5 MB/32.0 MB 58%]                                                                    191 kB/s 1min 10s[0m[33m
+70% [2 nodejs 18.6 MB/32.0 MB 58%]                                                                    191 kB/s 1min 10s[0m[33m
+71% [2 nodejs 18.7 MB/32.0 MB 58%]                                                                     191 kB/s 1min 9s[0m[33m
+71% [2 nodejs 18.8 MB/32.0 MB 59%]                                                                     191 kB/s 1min 9s[0m[33m
+71% [2 nodejs 18.9 MB/32.0 MB 59%]                                                                    172 kB/s 1min 16s[0m[33m
+71% [2 nodejs 19.0 MB/32.0 MB 59%]                                                                    172 kB/s 1min 15s[0m[33m
+71% [2 nodejs 19.1 MB/32.0 MB 60%]                                                                    172 kB/s 1min 15s[0m[33m
+72% [2 nodejs 19.2 MB/32.0 MB 60%]                                                                    172 kB/s 1min 14s[0m[33m
+72% [2 nodejs 19.3 MB/32.0 MB 60%]                                                                    172 kB/s 1min 14s[0m[33m
+72% [2 nodejs 19.3 MB/32.0 MB 60%]                                                                    172 kB/s 1min 14s[0m[33m
+72% [2 nodejs 19.4 MB/32.0 MB 61%]                                                                    172 kB/s 1min 13s[0m[33m
+72% [2 nodejs 19.5 MB/32.0 MB 61%]                                                                    172 kB/s 1min 12s[0m[33m
+72% [2 nodejs 19.6 MB/32.0 MB 61%]                                                                    172 kB/s 1min 12s[0m[33m
+73% [2 nodejs 19.7 MB/32.0 MB 62%]                                                                    172 kB/s 1min 11s[0m[33m
+73% [2 nodejs 19.8 MB/32.0 MB 62%]                                                                    172 kB/s 1min 11s[0m[33m
+73% [2 nodejs 19.9 MB/32.0 MB 62%]                                                                    172 kB/s 1min 10s[0m[33m
+73% [2 nodejs 20.1 MB/32.0 MB 63%]                                                                         199 kB/s 60s[0m[33m
+74% [2 nodejs 20.2 MB/32.0 MB 63%]                                                                         199 kB/s 59s[0m[33m
+74% [2 nodejs 20.3 MB/32.0 MB 63%]                                                                         199 kB/s 58s[0m[33m
+74% [2 nodejs 20.4 MB/32.0 MB 64%]                                                                         199 kB/s 58s[0m[33m
+74% [2 nodejs 20.5 MB/32.0 MB 64%]                                                                         199 kB/s 57s[0m[33m
+74% [2 nodejs 20.6 MB/32.0 MB 64%]                                                                         199 kB/s 57s[0m[33m
+75% [2 nodejs 20.7 MB/32.0 MB 65%]                                                                         199 kB/s 56s[0m[33m
+75% [2 nodejs 20.7 MB/32.0 MB 65%]                                                                         199 kB/s 56s[0m[33m
+75% [2 nodejs 21.1 MB/32.0 MB 66%]                                                                         199 kB/s 55s[0m[33m
+76% [2 nodejs 21.1 MB/32.0 MB 66%]                                                                         199 kB/s 54s[0m[33m
+76% [2 nodejs 21.3 MB/32.0 MB 66%]                                                                         199 kB/s 54s[0m[33m
+76% [2 nodejs 21.4 MB/32.0 MB 67%]                                                                         199 kB/s 53s[0m[33m
+76% [2 nodejs 21.5 MB/32.0 MB 67%]                                                                         240 kB/s 43s[0m[33m
+77% [2 nodejs 21.7 MB/32.0 MB 68%]                                                                         240 kB/s 43s[0m[33m
+77% [2 nodejs 21.7 MB/32.0 MB 68%]                                                                         240 kB/s 42s[0m[33m
+77% [2 nodejs 21.8 MB/32.0 MB 68%]                                                                         240 kB/s 42s[0m[33m
+77% [2 nodejs 21.9 MB/32.0 MB 68%]                                                                         240 kB/s 42s[0m[33m
+78% [2 nodejs 22.0 MB/32.0 MB 69%]                                                                         240 kB/s 41s[0m[33m
+78% [2 nodejs 22.1 MB/32.0 MB 69%]                                                                         240 kB/s 41s[0m[33m
+78% [2 nodejs 22.2 MB/32.0 MB 69%]                                                                         240 kB/s 40s[0m[33m
+78% [2 nodejs 22.3 MB/32.0 MB 70%]                                                                         240 kB/s 40s[0m[33m
+78% [2 nodejs 22.4 MB/32.0 MB 70%]                                                                         240 kB/s 40s[0m[33m
+79% [2 nodejs 22.6 MB/32.0 MB 71%]                                                                         240 kB/s 39s[0m[33m
+79% [2 nodejs 22.7 MB/32.0 MB 71%]                                                                         240 kB/s 38s[0m[33m
+79% [2 nodejs 22.8 MB/32.0 MB 71%]                                                                         218 kB/s 42s[0m[33m
+79% [2 nodejs 22.9 MB/32.0 MB 72%]                                                                         218 kB/s 41s[0m[33m
+79% [2 nodejs 22.9 MB/32.0 MB 72%]                                                                         218 kB/s 41s[0m[33m
+80% [2 nodejs 23.0 MB/32.0 MB 72%]                                                                         218 kB/s 41s[0m[33m
+80% [2 nodejs 23.1 MB/32.0 MB 72%]                                                                         218 kB/s 41s[0m[33m
+80% [2 nodejs 23.3 MB/32.0 MB 73%]                                                                         218 kB/s 40s[0m[33m
+80% [2 nodejs 23.5 MB/32.0 MB 73%]                                                                         218 kB/s 39s[0m[33m
+81% [2 nodejs 23.5 MB/32.0 MB 73%]                                                                         218 kB/s 39s[0m[33m
+81% [2 nodejs 23.6 MB/32.0 MB 74%]                                                                         218 kB/s 38s[0m[33m
+81% [2 nodejs 23.8 MB/32.0 MB 74%]                                                                         218 kB/s 37s[0m[33m
+81% [2 nodejs 23.9 MB/32.0 MB 75%]                                                                         218 kB/s 37s[0m[33m
+81% [2 nodejs 23.9 MB/32.0 MB 75%]                                                                         218 kB/s 37s[0m[33m
+82% [2 nodejs 24.1 MB/32.0 MB 75%]                                                                         213 kB/s 37s[0m[33m
+82% [2 nodejs 24.2 MB/32.0 MB 76%]                                                                         213 kB/s 36s[0m[33m
+82% [2 nodejs 24.2 MB/32.0 MB 76%]                                                                         213 kB/s 36s[0m[33m
+82% [2 nodejs 24.3 MB/32.0 MB 76%]                                                                         213 kB/s 36s[0m[33m
+83% [2 nodejs 24.5 MB/32.0 MB 76%]                                                                         213 kB/s 35s[0m[33m
+83% [2 nodejs 24.5 MB/32.0 MB 77%]                                                                         213 kB/s 35s[0m[33m
+83% [2 nodejs 24.6 MB/32.0 MB 77%]                                                                         213 kB/s 35s[0m[33m
+83% [2 nodejs 24.8 MB/32.0 MB 77%]                                                                         213 kB/s 34s[0m[33m
+83% [2 nodejs 24.8 MB/32.0 MB 78%]                                                                         213 kB/s 33s[0m[33m
+84% [2 nodejs 25.0 MB/32.0 MB 78%]                                                                         213 kB/s 32s[0m[33m
+84% [2 nodejs 25.1 MB/32.0 MB 78%]                                                                         213 kB/s 32s[0m[33m
+84% [2 nodejs 25.3 MB/32.0 MB 79%]                                                                         213 kB/s 31s[0m[33m
+85% [2 nodejs 25.5 MB/32.0 MB 80%]                                                                         234 kB/s 27s[0m[33m
+85% [2 nodejs 25.7 MB/32.0 MB 80%]                                                                         234 kB/s 27s[0m[33m
+85% [2 nodejs 25.8 MB/32.0 MB 81%]                                                                         234 kB/s 26s[0m[33m
+86% [2 nodejs 26.0 MB/32.0 MB 81%]                                                                         234 kB/s 25s[0m[33m
+86% [2 nodejs 26.2 MB/32.0 MB 82%]                                                                         234 kB/s 24s[0m[33m
+86% [2 nodejs 26.3 MB/32.0 MB 82%]                                                                         234 kB/s 24s[0m[33m
+86% [2 nodejs 26.3 MB/32.0 MB 82%]                                                                         234 kB/s 24s[0m[33m
+87% [2 nodejs 26.6 MB/32.0 MB 83%]                                                                         234 kB/s 22s[0m[33m
+87% [2 nodejs 26.7 MB/32.0 MB 83%]                                                                         234 kB/s 22s[0m[33m
+88% [2 nodejs 26.9 MB/32.0 MB 84%]                                                                         234 kB/s 21s[0m[33m
+88% [2 nodejs 26.9 MB/32.0 MB 84%]                                                                         234 kB/s 21s[0m[33m
+88% [2 nodejs 27.2 MB/32.0 MB 85%]                                                                         234 kB/s 20s[0m[33m
+89% [2 nodejs 27.3 MB/32.0 MB 85%]                                                                         305 kB/s 15s[0m[33m
+89% [2 nodejs 27.5 MB/32.0 MB 86%]                                                                         305 kB/s 14s[0m[33m
+89% [2 nodejs 27.6 MB/32.0 MB 86%]                                                                         305 kB/s 14s[0m[33m
+89% [2 nodejs 27.6 MB/32.0 MB 86%]                                                                         305 kB/s 14s[0m[33m
+89% [2 nodejs 27.7 MB/32.0 MB 87%]                                                                         305 kB/s 14s[0m[33m
+89% [2 nodejs 27.7 MB/32.0 MB 87%]                                                                         305 kB/s 14s[0m[33m
+90% [2 nodejs 27.9 MB/32.0 MB 87%]                                                                         305 kB/s 13s[0m[33m
+90% [2 nodejs 28.0 MB/32.0 MB 88%]                                                                         305 kB/s 13s[0m[33m
+90% [2 nodejs 28.0 MB/32.0 MB 88%]                                                                         305 kB/s 13s[0m[33m
+90% [2 nodejs 28.0 MB/32.0 MB 88%]                                                                         305 kB/s 13s[0m[33m
+91% [2 nodejs 28.4 MB/32.0 MB 89%]                                                                         305 kB/s 12s[0m[33m
+91% [2 nodejs 28.5 MB/32.0 MB 89%]                                                                         305 kB/s 11s[0m[33m
+91% [2 nodejs 28.7 MB/32.0 MB 90%]                                                                         224 kB/s 14s[0m[33m
+92% [2 nodejs 28.8 MB/32.0 MB 90%]                                                                         224 kB/s 14s[0m[33m
+92% [2 nodejs 29.0 MB/32.0 MB 90%]                                                                         224 kB/s 13s[0m[33m
+92% [2 nodejs 29.1 MB/32.0 MB 91%]                                                                         224 kB/s 13s[0m[33m
+92% [2 nodejs 29.2 MB/32.0 MB 91%]                                                                         224 kB/s 12s[0m[33m
+93% [2 nodejs 29.3 MB/32.0 MB 91%]                                                                         224 kB/s 12s[0m[33m
+93% [2 nodejs 29.4 MB/32.0 MB 92%]                                                                         224 kB/s 11s[0m[33m
+93% [2 nodejs 29.5 MB/32.0 MB 92%]                                                                         224 kB/s 11s[0m[33m
+94% [2 nodejs 29.7 MB/32.0 MB 93%]                                                                         224 kB/s 10s[0m[33m
+94% [2 nodejs 29.8 MB/32.0 MB 93%]                                                                         224 kB/s 10s[0m[33m
+94% [2 nodejs 29.8 MB/32.0 MB 93%]                                                                          224 kB/s 9s[0m[33m
+94% [2 nodejs 30.0 MB/32.0 MB 94%]                                                                          224 kB/s 9s[0m[33m
+94% [2 nodejs 30.0 MB/32.0 MB 94%]                                                                          221 kB/s 9s[0m[33m
+95% [2 nodejs 30.2 MB/32.0 MB 94%]                                                                          221 kB/s 8s[0m[33m
+95% [2 nodejs 30.4 MB/32.0 MB 95%]                                                                          221 kB/s 7s[0m[33m
+95% [2 nodejs 30.4 MB/32.0 MB 95%]                                                                          221 kB/s 7s[0m[33m
+95% [2 nodejs 30.6 MB/32.0 MB 95%]                                                                          221 kB/s 6s[0m[33m
+96% [2 nodejs 30.7 MB/32.0 MB 96%]                                                                          221 kB/s 6s[0m[33m
+96% [2 nodejs 30.8 MB/32.0 MB 96%]                                                                          221 kB/s 5s[0m[33m
+96% [2 nodejs 30.8 MB/32.0 MB 96%]                                                                          221 kB/s 5s[0m[33m
+96% [2 nodejs 30.9 MB/32.0 MB 97%]                                                                          221 kB/s 4s[0m[33m
+96% [2 nodejs 31.0 MB/32.0 MB 97%]                                                                          221 kB/s 4s[0m[33m
+96% [2 nodejs 31.1 MB/32.0 MB 97%]                                                                          221 kB/s 4s[0m[33m
+97% [2 nodejs 31.2 MB/32.0 MB 97%]                                                                          221 kB/s 3s[0m[33m
+97% [2 nodejs 31.3 MB/32.0 MB 98%]                                                                          207 kB/s 3s[0m[33m
+97% [2 nodejs 31.4 MB/32.0 MB 98%]                                                                          207 kB/s 3s[0m[33m
+97% [2 nodejs 31.5 MB/32.0 MB 98%]                                                                          207 kB/s 2s[0m[33m
+97% [2 nodejs 31.6 MB/32.0 MB 99%]                                                                          207 kB/s 2s[0m[33m
+98% [2 nodejs 31.6 MB/32.0 MB 99%]                                                                          207 kB/s 1s[0m[33m
+98% [2 nodejs 31.7 MB/32.0 MB 99%]                                                                          207 kB/s 1s[0m[33m
+98% [2 nodejs 31.8 MB/32.0 MB 99%]                                                                          207 kB/s 1s[0m[33m
+98% [2 nodejs 31.8 MB/32.0 MB 99%]                                                                          207 kB/s 0s[0m[33m
+98% [2 nodejs 31.9 MB/32.0 MB 100%]                                                                         207 kB/s 0s[0m[33m
+100% [Working]                                                                                              207 kB/s 0s[0m
+                                                                                                                       
+Fetched 38.4 MB in 2min 47s (229 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+
+7[0;29r8[1ASelecting previously unselected package libpython3.12-minimal:amd64.
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 5369 files and directories currently installed.)
+Preparing to unpack .../libpython3.12-minimal_3.12.3-1ubuntu0.8_amd64.deb ...
+7[30;0f[42m[30mProgress: [  0%][49m[39m [..................................................................................................] 87[30;0f[42m[30mProgress: [  2%][49m[39m [##................................................................................................] 8Unpacking libpython3.12-minimal:amd64 (3.12.3-1ubuntu0.8) ...
+7[30;0f[42m[30mProgress: [  4%][49m[39m [####..............................................................................................] 8Selecting previously unselected package libexpat1:amd64.
+Preparing to unpack .../libexpat1_2.6.1-2ubuntu0.3_amd64.deb ...
+7[30;0f[42m[30mProgress: [  6%][49m[39m [######............................................................................................] 8Unpacking libexpat1:amd64 (2.6.1-2ubuntu0.3) ...
+7[30;0f[42m[30mProgress: [  8%][49m[39m [########..........................................................................................] 8Selecting previously unselected package python3.12-minimal.
+Preparing to unpack .../python3.12-minimal_3.12.3-1ubuntu0.8_amd64.deb ...
+7[30;0f[42m[30mProgress: [ 10%][49m[39m [##########........................................................................................] 8Unpacking python3.12-minimal (3.12.3-1ubuntu0.8) ...
+7[30;0f[42m[30mProgress: [ 12%][49m[39m [############......................................................................................] 8Setting up libpython3.12-minimal:amd64 (3.12.3-1ubuntu0.8) ...
+7[30;0f[42m[30mProgress: [ 14%][49m[39m [#############.....................................................................................] 87[30;0f[42m[30mProgress: [ 16%][49m[39m [################..................................................................................] 8Setting up libexpat1:amd64 (2.6.1-2ubuntu0.3) ...
+7[30;0f[42m[30mProgress: [ 18%][49m[39m [##################................................................................................] 87[30;0f[42m[30mProgress: [ 20%][49m[39m [####################..............................................................................] 8Setting up python3.12-minimal (3.12.3-1ubuntu0.8) ...
+7[30;0f[42m[30mProgress: [ 22%][49m[39m [######################............................................................................] 87[30;0f[42m[30mProgress: [ 24%][49m[39m [########################..........................................................................] 8Selecting previously unselected package python3-minimal.
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 5688 files and directories currently installed.)
+Preparing to unpack .../0-python3-minimal_3.12.3-0ubuntu2_amd64.deb ...
+7[30;0f[42m[30mProgress: [ 27%][49m[39m [##########################........................................................................] 8Unpacking python3-minimal (3.12.3-0ubuntu2) ...
+7[30;0f[42m[30mProgress: [ 29%][49m[39m [###########################.......................................................................] 8Selecting previously unselected package media-types.
+Preparing to unpack .../1-media-types_10.1.0_all.deb ...
+7[30;0f[42m[30mProgress: [ 31%][49m[39m [##############################....................................................................] 8Unpacking media-types (10.1.0) ...
+7[30;0f[42m[30mProgress: [ 33%][49m[39m [################################..................................................................] 8Selecting previously unselected package netbase.
+Preparing to unpack .../2-netbase_6.4_all.deb ...
+7[30;0f[42m[30mProgress: [ 35%][49m[39m [##################################................................................................] 8Unpacking netbase (6.4) ...
+7[30;0f[42m[30mProgress: [ 37%][49m[39m [####################################..............................................................] 8Selecting previously unselected package tzdata.
+Preparing to unpack .../3-tzdata_2025b-0ubuntu0.24.04.1_all.deb ...
+7[30;0f[42m[30mProgress: [ 39%][49m[39m [######################################............................................................] 8Unpacking tzdata (2025b-0ubuntu0.24.04.1) ...
+7[30;0f[42m[30mProgress: [ 41%][49m[39m [########################################..........................................................] 8Selecting previously unselected package libpython3.12-stdlib:amd64.
+Preparing to unpack .../4-libpython3.12-stdlib_3.12.3-1ubuntu0.8_amd64.deb ...
+7[30;0f[42m[30mProgress: [ 43%][49m[39m [##########################################........................................................] 8Unpacking libpython3.12-stdlib:amd64 (3.12.3-1ubuntu0.8) ...
+7[30;0f[42m[30mProgress: [ 45%][49m[39m [############################################......................................................] 8Selecting previously unselected package python3.12.
+Preparing to unpack .../5-python3.12_3.12.3-1ubuntu0.8_amd64.deb ...
+7[30;0f[42m[30mProgress: [ 47%][49m[39m [##############################################....................................................] 8Unpacking python3.12 (3.12.3-1ubuntu0.8) ...
+7[30;0f[42m[30mProgress: [ 49%][49m[39m [################################################..................................................] 8Selecting previously unselected package libpython3-stdlib:amd64.
+Preparing to unpack .../6-libpython3-stdlib_3.12.3-0ubuntu2_amd64.deb ...
+7[30;0f[42m[30mProgress: [ 51%][49m[39m [##################################################................................................] 8Unpacking libpython3-stdlib:amd64 (3.12.3-0ubuntu2) ...
+7[30;0f[42m[30mProgress: [ 53%][49m[39m [####################################################..............................................] 8Setting up python3-minimal (3.12.3-0ubuntu2) ...
+7[30;0f[42m[30mProgress: [ 55%][49m[39m [#####################################################.............................................] 87[30;0f[42m[30mProgress: [ 57%][49m[39m [#######################################################...........................................] 8Selecting previously unselected package python3.
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 6658 files and directories currently installed.)
+Preparing to unpack .../python3_3.12.3-0ubuntu2_amd64.deb ...
+7[30;0f[42m[30mProgress: [ 59%][49m[39m [##########################################################........................................] 8Unpacking python3 (3.12.3-0ubuntu2) ...
+7[30;0f[42m[30mProgress: [ 61%][49m[39m [############################################################......................................] 8Selecting previously unselected package nodejs.
+Preparing to unpack .../nodejs_20.19.4-1nodesource1_amd64.deb ...
+7[30;0f[42m[30mProgress: [ 63%][49m[39m [##############################################################....................................] 8Unpacking nodejs (20.19.4-1nodesource1) ...
+7[30;0f[42m[30mProgress: [ 65%][49m[39m [################################################################..................................] 8Setting up media-types (10.1.0) ...
+7[30;0f[42m[30mProgress: [ 67%][49m[39m [##################################################################................................] 87[30;0f[42m[30mProgress: [ 69%][49m[39m [####################################################################..............................] 8Setting up tzdata (2025b-0ubuntu0.24.04.1) ...
+7[30;0f[42m[30mProgress: [ 71%][49m[39m [######################################################################............................] 8debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 79.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC entries checked: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.38.2 /usr/local/share/perl/5.38.2 /usr/lib/x86_64-linux-gnu/perl5/5.38 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl-base /usr/lib/x86_64-linux-gnu/perl/5.38 /usr/share/perl/5.38 /usr/local/lib/site_perl) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 8.)
+debconf: falling back to frontend: Teletype
+Configuring tzdata
+------------------
+
+Please select the geographic area in which you live. Subsequent configuration questions will narrow this down by
+presenting a list of cities, representing the time zones in which they are located.
+
+  1. Africa   3. Antarctica  5. Asia      7. Australia  9. Indian    11. Etc
+  2. America  4. Arctic      6. Atlantic  8. Europe     10. Pacific  12. Legacy
+Geographic area: ^[[E    5
+
+Please select the city or region corresponding to your time zone.
+
+  1. Aden      16. Brunei       31. Hong_Kong    46. Kuala_Lumpur  61. Pyongyang      76. Tel_Aviv
+  2. Almaty    17. Chita        32. Hovd         47. Kuching       62. Qatar          77. Thimphu
+  3. Amman     18. Choibalsan   33. Irkutsk      48. Kuwait        63. Qostanay       78. Tokyo
+  4. Anadyr    19. Chongqing    34. Istanbul     49. Macau         64. Qyzylorda      79. Tomsk
+  5. Aqtau     20. Colombo      35. Jakarta      50. Magadan       65. Riyadh         80. Ulaanbaatar
+  6. Aqtobe    21. Damascus     36. Jayapura     51. Makassar      66. Sakhalin       81. Urumqi
+  7. Ashgabat  22. Dhaka        37. Jerusalem    52. Manila        67. Samarkand      82. Ust-Nera
+  8. Atyrau    23. Dili         38. Kabul        53. Muscat        68. Seoul          83. Vientiane
+  9. Baghdad   24. Dubai        39. Kamchatka    54. Nicosia       69. Shanghai       84. Vladivostok
+  10. Bahrain  25. Dushanbe     40. Karachi      55. Novokuznetsk  70. Singapore      85. Yakutsk
+  11. Baku     26. Famagusta    41. Kashgar      56. Novosibirsk   71. Srednekolymsk  86. Yangon
+  12. Bangkok  27. Gaza         42. Kathmandu    57. Omsk          72. Taipei         87. Yekaterinburg
+  13. Barnaul  28. Harbin       43. Khandyga     58. Oral          73. Tashkent       88. Yerevan
+  14. Beirut   29. Hebron       44. Kolkata      59. Phnom_Penh    74. Tbilisi
+  15. Bishkek  30. Ho_Chi_Minh  45. Krasnoyarsk  60. Pontianak     75. Tehran
+Time zone: 40
+
+
+Current default time zone: 'Asia/Karachi'
+Local time is now:      Tue Aug 26 20:44:56 PKT 2025.
+Universal Time is now:  Tue Aug 26 15:44:56 UTC 2025.
+Run 'dpkg-reconfigure tzdata' if you wish to change it.
+
+7[30;0f[42m[30mProgress: [ 73%][49m[39m [########################################################################..........................] 8Setting up netbase (6.4) ...
+7[30;0f[42m[30mProgress: [ 76%][49m[39m [#########################################################################.........................] 87[30;0f[42m[30mProgress: [ 78%][49m[39m [############################################################################......................] 8Setting up libpython3.12-stdlib:amd64 (3.12.3-1ubuntu0.8) ...
+7[30;0f[42m[30mProgress: [ 80%][49m[39m [##############################################################################....................] 87[30;0f[42m[30mProgress: [ 82%][49m[39m [################################################################################..................] 8Setting up python3.12 (3.12.3-1ubuntu0.8) ...
+7[30;0f[42m[30mProgress: [ 84%][49m[39m [##################################################################################................] 87[30;0f[42m[30mProgress: [ 86%][49m[39m [####################################################################################..............] 8Setting up libpython3-stdlib:amd64 (3.12.3-0ubuntu2) ...
+7[30;0f[42m[30mProgress: [ 88%][49m[39m [######################################################################################............] 87[30;0f[42m[30mProgress: [ 90%][49m[39m [########################################################################################..........] 8Setting up python3 (3.12.3-0ubuntu2) ...
+7[30;0f[42m[30mProgress: [ 92%][49m[39m [##########################################################################################........] 8running python rtupdate hooks for python3.12...
+running python post-rtupdate hooks for python3.12...
+7[30;0f[42m[30mProgress: [ 94%][49m[39m [############################################################################################......] 8Setting up nodejs (20.19.4-1nodesource1) ...
+7[30;0f[42m[30mProgress: [ 96%][49m[39m [#############################################################################################.....] 87[30;0f[42m[30mProgress: [ 98%][49m[39m [################################################################################################..] 8Processing triggers for libc-bin (2.39-0ubuntu8.5) ...
+
+7[0;30r8[1A[J[?2004h]0;root@b2e5915f85d5: /usr/src/app root@b2e5915f85d5:/usr/src/app# node [7m/usr/src/app/index.js[27m /usr/src/app/index.js
+[?2004l
+Hello World
+[?2004h]0;root@b2e5915f85d5: /usr/src/app root@b2e5915f85d5:/usr/src/app# exit
+[?2004l
+exit
+
+[?2004h]0;ezhdeha@ezhdeha: ~ [;32m┌──([1;34mezhdeha㉿ezhdeha[;32m)-[[0;1m~[;32m]
+[;32m└─[1;34m$[0m exit
+[?2004l
+exit
+
+Script done on 2025-08-26 20:48:25+05:00 [COMMAND_EXIT_CODE="0"]
