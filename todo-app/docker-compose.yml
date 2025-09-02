@@ -1,0 +1,74 @@
+services:
+  todo-frontend:
+    image: node:18
+    container_name: todo-frontend-build
+    working_dir: /app
+    volumes:
+      - ./todo-frontend:/app
+      - frontend-build:/app/dist
+    command: sh -c "npm install && npm run build"
+    environment:
+      - VITE_BACKEND_URL=/api/
+    networks:
+      - todo-network-prod
+
+  mongo:
+    image: mongo
+    container_name: mongo-prod
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+      MONGO_INITDB_DATABASE: the_database
+    volumes:
+      - ./todo-backend/mongo/mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
+      - mongo-data:/data/db
+    networks:
+      - todo-network-prod
+
+  redis:
+    image: redis:7
+    container_name: redis-prod
+    command: ["redis-server", "--appendonly", "yes"]
+    volumes:
+      - redis-data:/data
+    networks:
+      - todo-network-prod
+
+  todo-backend:
+    image: todo-backend:prod
+    container_name: todo-backend
+    build:
+      context: ./todo-backend
+      dockerfile: Dockerfile
+    environment:
+      - NODE_ENV=production
+      - MONGO_URL=mongodb://the_username:the_password@mongo:27017/the_database?authSource=the_database
+      - REDIS_URL=redis://redis:6379
+    depends_on:
+      - mongo
+      - redis
+    networks:
+      - todo-network-prod
+
+  nginx:
+    image: nginx:alpine
+    container_name: todo-nginx-prod
+    volumes:
+      - frontend-build:/usr/share/nginx/html:ro
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    ports:
+      - "80:80"
+    depends_on:
+      - todo-frontend
+      - todo-backend
+    networks:
+      - todo-network-prod
+
+volumes:
+  mongo-data:
+  redis-data:
+  frontend-build:
+
+networks:
+  todo-network-prod:
+    driver: bridge

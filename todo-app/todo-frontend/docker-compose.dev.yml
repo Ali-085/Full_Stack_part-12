@@ -1,0 +1,22 @@
+services:
+  todo-frontend:
+    build:
+      context: .
+      dockerfile: dev.Dockerfile
+    image: todo-frontend-dev
+    container_name: todo-frontend
+    working_dir: /app
+    command: sh -c "npm install && npm run dev -- --host 0.0.0.0"
+    ports:
+      - "5173:5173"   # expose Vite dev server
+    volumes:
+      - .:/app        # mount only frontend code
+      - /app/node_modules           # anonymous volume for node_modules
+    environment:
+      - VITE_BACKEND_URL=http://127.0.0.1:3000
+    networks:
+      - todo-network
+
+networks:
+  todo-network:
+    driver: bridge
